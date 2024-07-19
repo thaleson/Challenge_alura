@@ -1,0 +1,155 @@
+/* Define o estilo para o corpo do documento */
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão */
+    background-image: url('https://i.pinimg.com/564x/52/28/c1/5228c1ca678bf00fb3996bf9fa1c54b1.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o corpo */
+    background-position: initial; /* Define a posição inicial da imagem de fundo */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Define o display como flex para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
+}
+
+/* Define o estilo para o container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Define a cor de fundo com opacidade */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao redor do container */
+    border-radius: 15px; /* Define bordas arredondadas */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    display: flex; /* Define o display como flex */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    width: 90%; /* Define a largura como 90% */
+    max-width: 800px; /* Define a largura máxima como 800px */
+    padding: 20px; /* Adiciona padding ao redor do container */
+}
+
+/* Define o estilo para as áreas de entrada e saída */
+.input-area, .output-area {
+    padding: 20px; /* Adiciona padding */
+}
+
+/* Define o estilo para o título dentro da área de entrada */
+.input-area h1 {
+    font-size: 2em; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor da fonte */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo para o textarea */
+textarea {
+    width: 100%; /* Define a largura como 100% */
+    height: 100px; /* Define a altura */
+    border: 2px solid #ddd; /* Define a borda */
+    border-radius: 5px; /* Define bordas arredondadas */
+    padding: 10px; /* Adiciona padding */
+    font-size: 1em; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura e altura */
+    resize: none; /* Remove a opção de redimensionar */
+    font-family: 'Roboto', sans-serif; /* Define a fonte */
+}
+
+/* Define o estilo para a área dos botões */
+.buttons {
+    display: flex; /* Define o display como flex */
+    justify-content: space-around; /* Distribui os botões igualmente */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Define o estilo para os botões */
+button {
+    background-color: #0056b3; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Define bordas arredondadas */
+    padding: 15px 20px; /* Adiciona padding */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 1em; /* Define o tamanho da fonte */
+    flex: 1; /* Permite que os botões cresçam igualmente */
+    margin: 0 10px; /* Adiciona margem horizontal */
+    transition: background-color 0.3s ease; /* Adiciona transição suave para a cor de fundo */
+}
+
+/* Define a cor de fundo para o botão de descriptografar */
+button#decrypt-button {
+    background-color: #28a745;
+}
+
+/* Define a cor de fundo para o botão de resetar */
+button#reset-button {
+    background-color: #dc3545;
+}
+
+/* Define o efeito hover para os botões */
+button:hover {
+    background-color: #004494; /* Cor de fundo ao passar o mouse */
+}
+
+/* Define o efeito hover para o botão de descriptografar */
+button#decrypt-button:hover {
+    background-color: #218838;
+}
+
+/* Define o efeito hover para o botão de resetar */
+button#reset-button:hover {
+    background-color: #c82333;
+}
+
+/* Define o estilo para a área de saída */
+.output-area {
+    background-color: #f7f7f7; /* Define a cor de fundo */
+    border: 2px solid #ddd; /* Define a borda */
+    border-radius: 5px; /* Define bordas arredondadas */
+    padding: 20px; /* Adiciona padding */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo para a mensagem padrão */
+.default-message {
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    color: #999; /* Define a cor da fonte */
+}
+
+/* Define o estilo para a mensagem de saída */
+.output-message {
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor da fonte */
+}
+
+/* Define o estilo para o elemento escondido */
+.hidden {
+    display: none; /* Esconde o elemento */
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Alinha os botões em uma coluna */
+    }
+
+    button {
+        margin: 10px 0; /* Adiciona margem vertical */
+    }
+}
+
+/* Estilos responsivos para telas menores que 480px */
+@media (max-width: 480px) {
+    .input-area h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+    }
+
+    textarea {
+        height: 80px; /* Reduz a altura do textarea */
+    }
+
+    button {
+        padding: 10px; /* Reduz o padding dos botões */
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos botões */
+    }
+
+    .output-message {
+        font-size: 1.2em; /* Reduz o tamanho da fonte da mensagem de saída */
+    }
+}

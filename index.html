@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Criptografia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="input-area">
+            <h1>Digite seu texto para Criptografar ou Descriptografar </h1>
+            <textarea id="input-text" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="buttons">
+                <button id="encrypt-button">Criptografar</button>
+                <button id="decrypt-button">Descriptografar</button>
+                <button id="reset-button">Resetar</button>
+            </div>
+            <p>Apenas letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="output-area" id="output-area">
+            <p class="default-message">Nenhuma mensagem encontrada</p>
+            <p class="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
